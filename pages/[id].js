@@ -73,16 +73,16 @@ function NFT({ nft, title }) {
             <h3 className="text-3xl font-semibold mb-4">{nft?.title}</h3>
             <div className="relative rounded-md px-4 bg-black w-full">
               <img src={img_url} />
-              {/* <span
+              <span
                 className="absolute top-5 right-5
               text-white px-2 py-2 font-medium text-xs rounded-md bg-yellow-100 text-yellow-600"
               >
                 #{nft.rarity_rank + 1}
-              </span> */}
+              </span>
             </div>
-            {/* <div className="py-4 px-2 w-full rounded-md text-lg mt-4 bg-red-100 text-red-500">
+            <div className="py-4 px-2 w-full rounded-md text-lg mt-4 bg-red-100 text-red-500">
               ♦️ {nft.rarity_score.toFixed(2)}
-            </div> */}
+            </div>
             {/* {nft.current_price !== "-" && (
               <div className="py-4 px-2 w-full rounded-md text-lg mt-4 bg-green-100 text-green-500">
                 <span>{`Ξ ${formatPrice(nft?.current_price)}`}</span>
