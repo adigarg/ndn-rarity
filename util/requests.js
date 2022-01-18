@@ -25,11 +25,3 @@ export const getFilters = async (query) => {
   const data = await res.json();
   return data;
 };
-
-export const getNFTInfo = async (id) => {
-  const res = await fetch(
-    `https://api.opensea.io/api/v1/assets?collection=${config.COLLECTION_NAME.toLowerCase()}&token_ids=${id}&format=json`
-  );
-  const data = await res.json();
-  return data;
-};
