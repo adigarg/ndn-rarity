@@ -14,7 +14,7 @@ export const AttrFilter = (props) => {
   }
 
   return (
-    <div className="text-xs mt-4" onChange={handleChange}>
+    <div className="text-lg mt-4" onChange={handleChange}>
       <h3 className="font-bold px-2 text-gray-700 uppercase mb-2">Attributes</h3>
       <div className="px-2">
         {filters.map(filter =>

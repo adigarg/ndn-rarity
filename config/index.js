@@ -1,9 +1,9 @@
 export const config = {
   env: "local",
   LOCAL_API_URL: "localhost:3000",
-  API_URL: "odp-rarity.vercel.app",
-  COLLECTION_NAME: "OneDayPunks",
+  API_URL: "",
+  COLLECTION_NAME: "NDN",
   COLLECTION_TITLE: "Near Dragon Nation",
-  COLLECTION_DESCRIPTION: '10k "One Day I\'ll Be A Punk"-punks.',
-  COLLECTION_IMG_LINK: "https://punkscape.xyz/og.png",
+  COLLECTION_DESCRIPTION: '3,000 Dragons on the NEAR blockchain.',
+  COLLECTION_IMG_LINK: "",
 };

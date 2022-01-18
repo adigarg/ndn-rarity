@@ -57,7 +57,7 @@ export const Tools = (props) => {
 
   return (
     <div onChange={handleChange} className="px-2 mt-4">
-      <h3 className="text-xs text-gray-700 uppercase mb-2 font-bold">
+      <h3 className="text-lg text-gray-700 uppercase mb-2 font-bold">
         Sort By
       </h3>
       {!(sort_by == "rarity_score" && order == "desc") && (
@@ -67,10 +67,10 @@ export const Tools = (props) => {
             handleChange("rarity desc");
           }}
         >
-          <span c lassName="text-xs">
+          <span c lassName="text-lg">
             <ImSortNumbericDesc />
           </span>
-          <span className="text-xs">&nbsp;&nbsp;Rarity</span>
+          <span className="text-lg">&nbsp;&nbsp;Rarity</span>
         </a>
       )}
       {!(sort_by == "rarity_score" && order == "asc") && (
@@ -80,36 +80,10 @@ export const Tools = (props) => {
             handleChange("rarity asc");
           }}
         >
-          <span className="text-xs">
+          <span className="text-lg">
             <ImSortNumericAsc />
           </span>
-          <span className="text-xs">&nbsp;&nbsp;Rarity</span>
-        </a>
-      )}
-      {!(sort_by == "id" && order == "desc") && (
-        <a
-          className="hover:bg-gray-300 hover:text-gray-900 cursor-pointer text-gray-700 py-2 px-2 rounded-md w-full flex items-center"
-          onClick={() => {
-            handleChange("id desc");
-          }}
-        >
-          <span className="text-xs">
-            <ImSortNumbericDesc />
-          </span>
-          <span className="text-xs">&nbsp;&nbsp;Token ID</span>
-        </a>
-      )}
-      {!(sort_by == "id" && order == "asc") && (
-        <a
-          className="hover:bg-gray-300 hover:text-gray-900 cursor-pointer text-gray-700 py-2 px-2 rounded-md w-full flex items-center"
-          onClick={() => {
-            handleChange("id asc");
-          }}
-        >
-          <span className="text-xs">
-            <ImSortNumericAsc />
-          </span>
-          <span className="text-xs">&nbsp;&nbsp;Token ID</span>
+          <span className="text-lg">&nbsp;&nbsp;Rarity</span>
         </a>
       )}
     </div>

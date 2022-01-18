@@ -34,7 +34,7 @@ export const PageNumbers = (props) => {
                 `?${json2query({ ...router.query, page_id: parseInt(val) })}`
               )
             }
-          >
+          > 
             {val}
           </a>
         ))}

@@ -24,6 +24,10 @@ function Home({ title, img, description, nfts, pages, filters }) {
       ref={ref}
     >
       <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue"
+          rel="stylesheet"
+        />
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -59,7 +63,7 @@ function Home({ title, img, description, nfts, pages, filters }) {
         <div className="flex flex-col w-full w-5xl px-4">
           {showMenu}
           <TraitFilters />
-          <div className="flex flex-wrap justify-between sm:justify-start max-w-5xl w-full">
+          <div className="flex flex-wrap justify-between sm:justify-start w-full">
             {nfts.map((nft, idx) => (
               <NFT {...nft} index={idx} key={idx} />
             ))}
