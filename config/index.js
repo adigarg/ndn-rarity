@@ -3,7 +3,7 @@ export const config = {
   LOCAL_API_URL: "localhost:3000",
   API_URL: "odp-rarity.vercel.app",
   COLLECTION_NAME: "OneDayPunks",
-  COLLECTION_TITLE: "One Day Punks",
+  COLLECTION_TITLE: "Near Dragon Nation",
   COLLECTION_DESCRIPTION: '10k "One Day I\'ll Be A Punk"-punks.',
   COLLECTION_IMG_LINK: "https://punkscape.xyz/og.png",
 };

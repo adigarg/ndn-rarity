@@ -1,17 +1,20 @@
 export const getDesc = (nft) => {
   let desc;
+  // desc = `
+  // 🔷ID: ${nft.id}
+
+  // 🔷Rarity score: ${nft.rarity_score.toFixed(2)}
+
+  // 🔷Rarity rank: ${nft.rarity_rank + 1}
+
+  // ${
+  //   nft.current_price !== "-"
+  //     ? `🔷Price: Ξ${formatPrice(nft.current_price)}`
+  //     : ""
+  // }
+  // `;
   desc = `
   🔷ID: ${nft.id}
-  
-  🔷Rarity score: ${nft.rarity_score.toFixed(2)}
-  
-  🔷Rarity rank: ${nft.rarity_rank + 1}
-  
-  ${
-    nft.current_price !== "-"
-      ? `🔷Price: Ξ${formatPrice(nft.current_price)}`
-      : ""
-  }
   `;
   return desc;
 };
